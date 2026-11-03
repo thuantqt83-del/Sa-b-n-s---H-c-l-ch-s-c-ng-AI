@@ -14,7 +14,7 @@
     quality: 'high', // high | low
     voiceName: '', // giọng dự phòng của trình duyệt
     advisor: true, // bật cố vấn AI gợi ý 3 bậc
-    teacherPin: '1954',
+    teacherPin: null, // không ghi mã PIN trong code: giáo viên tự đặt lần đầu, lưu trên máy đó
   };
 
   let db = { v: 1, settings: { ...DEFAULT_SETTINGS }, current: null, profiles: {} };

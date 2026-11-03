@@ -18,8 +18,6 @@ Chạy hoàn toàn trên trình duyệt, **không cần mạng, không cần cà
 - Giọng kể nam thu sẵn, nhạc trống trận, tiếng binh khí khớp với lời kể.
 - Học cùng AI qua 41 mốc sự kiện; luyện 20 đề tốt nghiệp (28 câu / 50 phút); hồ sơ học sinh; bảng thống kê cho giáo viên.
 
-Xem chi tiết cách dùng trong [`HUONG_DAN.txt`](HUONG_DAN.txt).
-
 ## Cấu trúc thư mục
 
 | Thư mục / file | Vai trò |
@@ -46,6 +44,6 @@ python -X utf8 tools/make_vo.py
 
 ## Lưu ý
 
-- Mã PIN giáo viên mặc định ghi trong `HUONG_DAN.txt`; nên đổi ở thẻ **Giáo viên → Dữ liệu** trước khi dùng cho lớp.
+- Mã PIN giáo viên không nằm trong mã nguồn: lần đầu mở mục **Giáo viên**, người dùng tự đặt PIN, lưu trên máy đó.
 - Một số chi tiết trên sa bàn (vị trí cứ điểm, tên các cánh quân…) mang tính minh họa.
 - Chưa chọn giấy phép sử dụng cho mã nguồn.

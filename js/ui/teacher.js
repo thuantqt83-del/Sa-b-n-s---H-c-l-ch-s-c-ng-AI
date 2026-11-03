@@ -45,14 +45,20 @@
   };
 
   function gate(wrap, ok) {
-    const pin = h('input', { type: 'password', placeholder: 'Mã PIN giáo viên', maxlength: 12, onkeydown: (e) => { if (e.key === 'Enter') go(); } });
+    const saved = SBS.store.settings.teacherPin; // chưa đặt PIN thì saved rỗng: lần đầu sẽ đặt mã mới
+    const pin = h('input', { type: 'password', placeholder: saved ? 'Mã PIN giáo viên' : 'Mã PIN mới (4 – 12 kí tự)', maxlength: 12, onkeydown: (e) => { if (e.key === 'Enter') go(); } });
     const go = () => {
-      if (pin.value === String(SBS.store.settings.teacherPin)) { unlocked = true; ok(); }
+      if (!saved) {
+        if (pin.value.length < 4) return SBS.toast('Mã PIN cần ít nhất 4 kí tự.', 'warn');
+        SBS.store.set('teacherPin', pin.value); unlocked = true; return ok();
+      }
+      if (pin.value === String(saved)) { unlocked = true; ok(); }
       else { SBS.toast('Mã PIN chưa đúng.', 'warn'); pin.value = ''; }
     };
     wrap.appendChild(h('div', { class: 'card', style: { maxWidth: '440px', margin: '40px auto' } },
-      h('h3', null, '🔒 Khu vực giáo viên'), h('p', { class: 'muted' }, 'Nhập mã PIN để xem bảng thống kê. Mã mặc định ghi trong file HUONG_DAN.txt; giáo viên nên đổi mã ở thẻ “Dữ liệu”.'),
-      h('div', { class: 'field' }, pin), h('button', { class: 'btn primary', onclick: go }, 'Mở bảng thống kê')));
+      h('h3', null, '🔒 Khu vực giáo viên'),
+      h('p', { class: 'muted' }, saved ? 'Nhập mã PIN để xem bảng thống kê. Giáo viên có thể đổi mã ở thẻ “Dữ liệu”.' : 'Lần đầu dùng: hãy đặt mã PIN cho giáo viên. Mã chỉ lưu trên máy này, không có trong mã nguồn.'),
+      h('div', { class: 'field' }, pin), h('button', { class: 'btn primary', onclick: go }, saved ? 'Mở bảng thống kê' : 'Đặt mã PIN và mở')));
     setTimeout(() => pin.focus(), 50);
   }
 

@@ -13,3 +13,6 @@ __pycache__/
 
 # cấu hình Claude Code cục bộ
 .claude/
+
+# hướng dẫn nội bộ cho giáo viên (không đưa lên GitHub)
+HUONG_DAN.txt
