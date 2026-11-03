@@ -1,0 +1,73 @@
+HỌC LỊCH SỬ CÙNG AI BẰNG SA BÀN SỐ
+Kháng chiến chống thực dân Pháp (1945 – 1954) và kháng chiến chống Mỹ, cứu nước (1954 – 1975)
+=====================================================================================
+
+1. CÁCH MỞ APP
+   - Bấm đúp vào file MO_APP.bat (hoặc index.html). App chạy ngay trên trình duyệt, KHÔNG cần mạng, KHÔNG cần cài đặt.
+   - Nên dùng Microsoft Edge hoặc Google Chrome bản mới. Máy cần có card đồ họa hỗ trợ WebGL (hầu hết máy hiện nay đều có).
+   - Mở là vào thẳng trang chủ (không có trang chào). Lần bấm chuột/phím đầu tiên sẽ mở âm thanh (trình duyệt yêu cầu như vậy). Không phải nhập tên; muốn ghi tên/lớp thì bấm nút hồ sơ ở góc trên.
+   - Cách đi: nút to ◀ ▶ ở dưới (hoặc phím ← →) để chuyển bước; thanh tab dưới cùng để chuyển trang/trận.
+   - Muốn cho cả lớp dùng: chép nguyên thư mục SaBanSo sang máy/USB của học sinh, hoặc đưa lên một trang web.
+
+2. APP GỒM NHỮNG GÌ
+   a) Sa bàn 3D – 6 trận (đồi núi, nhà sàn, cây cối, địa danh):
+        Chống Pháp : Việt Bắc thu – đông 1947 · Biên giới thu – đông 1950 · Điện Biên Phủ 1954
+        Chống Mỹ   : Ấp Bắc 1963 · "Điện Biên Phủ trên không" 12/1972 · Tây Nguyên + Hồ Chí Minh (Xuân 1975, gộp 1 trận)
+      Mỗi trận: mở đầu (âm mưu của địch, tương quan lực lượng ta – địch) → mỗi quyết định đều có 2 cảnh diễn biến đứng trước (máy bay, quân nhảy dù,
+      pháo kéo vào trận địa, xe tăng, trực thăng… chuyển động, có tiếng, khớp lời kể) → 3 QUYẾT ĐỊNH → tổng kết.
+      Bấm chọn phương án A, B hoặc C (trên sa bàn hoặc ở bảng bên phải) thì giọng nam đọc "Phương án …" rồi nội dung phương án đó. Thanh trên cùng gọn trên MỘT dòng: logo, các trang (Trang chủ + 6 chiến dịch), các nút Học cùng AI, Luyện đề, Thống kê, Giáo viên (kèm chữ chú thích), nút nhạc/giọng/cài đặt ; chú thích mũi tên (xanh = âm mưu của địch, đỏ = hướng đánh của ta) là hai dòng chữ nhỏ ở mép trái trong sa bàn; thanh dưới cùng chỉ có nút ◀ ▶ chuyển trang (ở trang Học cùng AI thì chuyển mốc).
+        - MŨI TÊN XANH = âm mưu / hướng đánh của địch, MŨI TÊN ĐỎ = hướng đánh của ta; mũi tên nhấp nháy, chạy đến địa danh nào
+          thì nhãn địa danh đó sáng lên đúng lúc giọng kể nhắc tên. Bấm vào mũi tên để sa bàn xoay, phóng to theo mũi tên.
+          (Sa bàn không tự xoay khi đứng yên.)
+        - Mỗi quyết định có 3 PHƯƠNG ÁN A, B, C hiện ngay trên sa bàn (ô đỏ sẫm viền trắng nét đứt, ngay cạnh mũi tên của phương án); học sinh bấm chọn rồi "Chốt hướng đánh".
+        - CỐ VẤN AI gợi ý 3 BẬC: địa hình, tương quan lực lượng, thời cơ – bấm vào bậc nào thì gợi ý bậc đó hiện ra ngay (hoặc bấm "Gợi ý tiếp"); có nút ▲▼ thu gọn/mở rộng và nút tắt/mở cố vấn.
+          Mỗi gợi ý trừ 1 điểm, không đưa đáp án.
+        - Chọn sai: bảng "Cố vấn AI phân tích lựa chọn của em" hiện điểm hấp dẫn của lựa chọn, LỖI TƯ DUY (nóng vội, chủ quan, bị động, rập khuôn, dàn trải…), cách nghĩ đúng; trừ 3 điểm/lần sai.
+          Chọn đúng: hiện "Lịch sử đã chọn" và "So sánh các hướng đánh" (✔/✘ từng phương án).
+        - Cuối trận: điểm /30, số sao, YẾU TỐ THẮNG LỢI CỦA TA, nhận xét và lời khuyên của AI. Có chế độ "Xem diễn biến" (chỉ xem và nghe).
+   b) Học cùng AI qua 41 mốc sự kiện (1945 – 1975): nghe kể, AI hỏi nhanh, trò chơi sắp xếp mốc thời gian, hỏi AI (tra cứu).
+   c) Luyện đề tốt nghiệp: 20 đề, mỗi đề đúng cấu trúc 28 câu / 50 phút:
+        Phần I: 24 câu trắc nghiệm (0,25 điểm/câu) · Phần II: 4 câu Đúng/Sai, mỗi câu 4 ý (đúng 1 ý 0,1 · 2 ý 0,25 · 3 ý 0,5 · 4 ý 1 điểm).
+      Chấm điểm thang 10, có đáp án, giải thích và AI phân tích điểm mạnh – yếu theo chủ đề.
+   d) Hồ sơ học sinh và BẢNG THỐNG KÊ GIÁO VIÊN.
+   e) Âm thanh: nhạc nền TRỐNG TRẬN (trống cái, trống con, trống dồn; không kèn, sáo, chuông, không tiếng ngân dài) đổi theo từng màn,
+      và giọng kể NAM đọc diễn biến, gợi ý của AI, phần phân tích lỗi sai. Chỉnh âm lượng ở nút ⚙.
+      TIẾNG BINH KHÍ: pháo bắn và đạn rít, nổ, súng máy/cao xạ, động cơ + xích xe tăng, máy bay phản lực/B-52/cánh quạt, trực thăng,
+      tên lửa, máy bay trúng đạn rơi. Âm thanh khớp theo lời kể (pháo nổ đúng lúc giọng kể nói tới pháo, máy bay vào đúng lúc nói tới máy bay…),
+      chia trái/phải theo vị trí trên sa bàn. Chỉnh âm lượng riêng ở nút ⚙ ("Âm lượng tiếng pháo, xe tăng, máy bay"), có nút thử.
+      Hình ảnh động: xe chạy có bụi và khói máy, máy bay có vệt khói, pháo giật nòng khi bắn, trực thăng quạt gió.
+
+3. BẢNG THỐNG KÊ GIÁO VIÊN
+   - Vào mục "Giáo viên", nhập mã PIN mặc định: 1954  (nên đổi ở thẻ "Dữ liệu").
+   - Thẻ "Bảng thống kê": danh sách học sinh với điểm từng trận (/30), tổng sa bàn, số sao, số mốc đã vững, số đề đã làm, điểm đề trung bình và cao nhất,
+     lỗi tư duy nổi bật, lần hoạt động gần nhất; lọc theo lớp, tìm tên, sắp xếp theo cột, xuất Excel (CSV), in bảng.
+   - Thẻ "Phân tích lớp": lỗi tư duy phổ biến, tỉ lệ đúng theo chủ đề, độ khó từng quyết định, 10 câu hỏi sai nhiều nhất.
+   - Thẻ "Kiểm tra app": tự rà soát dữ liệu 6 trận, 20 đề, mốc sự kiện, âm thanh và giọng đọc.
+   - Thẻ "Đề & đáp án": bảng đáp án 20 đề. Thẻ "Dữ liệu": nhập kết quả, sao lưu, đổi PIN, xóa dữ liệu.
+   - Kết quả học sinh được lưu ngay trong trình duyệt của MÁY ĐÓ. Nếu học sinh học ở máy khác:
+       học sinh vào "Hồ sơ" → "Nộp kết quả cho giáo viên" (tải file .json) → gửi cho giáo viên
+       → giáo viên vào Giáo viên → Dữ liệu → "Nhập kết quả học sinh" (chọn nhiều file cùng lúc) → bảng thống kê gộp cả lớp.
+
+4. GIỌNG KỂ NAM
+   - Toàn bộ lời kể (mở đầu, diễn biến, gợi ý và phân tích của AI, mốc sự kiện, tổng kết) đã được thu sẵn bằng giọng nam (Microsoft NamMinh Neural)
+     trong thư mục audio/nam – nghe được ngay cả khi không có mạng.
+   - Nếu sửa nội dung lời kể trong thư mục js/data thì chạy lại 2 lệnh sau để thu thêm đoạn mới (cần mạng, cần Node và Python + pip install edge-tts):
+         node tools/build_vo.mjs
+         python -X utf8 tools/make_vo.py
+   - Đoạn nào chưa có file thu sẵn, app dùng giọng tiếng Việt có sẵn của trình duyệt (nên mở bằng Microsoft Edge).
+
+5. THÊM / SỬA NỘI DUNG
+   - js/data/b1…b6_*.js : 6 trận (bản đồ, diễn biến, 3 quyết định, lỗi tư duy)    - js/data/briefs.js : âm mưu địch, tương quan lực lượng, yếu tố thắng lợi
+   - js/data/milestones.js : 41 mốc sự kiện
+   - js/data/questions.js : ngân hàng câu hỏi (111 câu trắc nghiệm + 32 câu Đúng/Sai). 20 đề được ghép tự động, mỗi đề khác nhau.
+     Lưu ý: ngân hàng chỉ có 2 chuyên đề kháng chiến nên các đề có câu lặp lại giữa các đề; muốn đa dạng hơn, thêm câu hỏi vào file này.
+   - Sau khi sửa, mở thẻ Giáo viên → "Kiểm tra app" để rà soát lỗi dữ liệu.
+
+6. LƯU Ý
+   - Các chi tiết bổ sung (ví dụ vị trí cứ điểm, tên các cánh quân…) mang tính minh họa trên sa bàn; nội dung chính bám sát chương trình.
+   - Bộ "AI tham mưu" chạy ngay trên máy (không gọi dịch vụ AI bên ngoài), nội dung phân tích do người soạn viết sẵn nên ổn định và không "bịa" sự kiện.
+   - Dùng trên điện thoại (màn dọc): thanh trên có 2 hàng (logo + 4 công cụ + nhạc/giọng/cài đặt; hàng dưới là các tab trận đánh, vuốt ngang để xem hết).
+     Sa bàn ở trên, thanh tiến độ ngay dưới, nội dung cuộn ở dưới cùng. Chữ nhãn, chú thích mũi tên và 3 lựa chọn A, B, C thu nhỏ và nằm gọn trong sa bàn;
+     các thẻ trận đánh ở trang chủ vuốt ngang. Vuốt một ngón để xoay sa bàn, hai ngón để phóng to / thu nhỏ.
+   - Chữ trên sa bàn tự xếp không chồng lên nhau: nhãn quan trọng (A, B, C, ghi chú) được dời lên / xuống, nhãn thường bị ẩn nếu che nhau.
+   - Sa bàn Ấp Bắc và Điện Biên Phủ trên không có thêm nhà (xóm làng, làng ven đô), cánh đồng lúa xanh – lúa chín chia ô và cây bông lau dọc sông, kênh. Muốn thêm ở trận khác: khai báo "fields" (ô ruộng), "reeds" (bông lau) trong phần terrain của file trận, và thêm địa danh kiểu "village".

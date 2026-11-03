@@ -1,0 +1,192 @@
+/* Trận 2 – Chiến dịch Biên giới thu – đông 1950 */
+(function () {
+  'use strict';
+  const SBS = window.SBS;
+  SBS.battles.push({
+    id: 'bienGioi1950', era: 'phap', order: 2,
+    title: 'Chiến dịch Biên giới thu – đông 1950', short: 'Biên giới 1950', date: '16/9 – 10/1950', place: 'Biên giới Việt – Trung, Đường số 4',
+    tagline: 'Chiến dịch tiến công lớn đầu tiên của bộ đội chủ lực – giành thế chủ động trên chiến trường chính.',
+    thumb: 'karst',
+    brief: {
+      context: 'Sau thất bại ở Việt Bắc, Pháp lập Kế hoạch Rơ-ve: dựng chuỗi cứ điểm dọc Đường số 4 từ Cao Bằng đến Lạng Sơn để khóa chặt biên giới, cô lập Việt Bắc. Ta mở chiến dịch ở biên giới để phá thế bao vây.',
+      goal: 'Giải phóng biên giới, mở đường liên lạc quốc tế, bảo vệ căn cứ Việt Bắc.',
+      ta: ['Bộ đội chủ lực đã trưởng thành', 'Dân công và nhân dân Việt Bắc'],
+      dich: ['Chuỗi cứ điểm: Cao Bằng – Đông Khê – Thất Khê – Na Sầm – Lạng Sơn', 'Xe cơ giới, pháo, máy bay; viện binh ở Thất Khê'],
+    },
+    keys: [
+      'Diễn ra từ tháng 9 đến tháng 10/1950 ở khu vực biên giới Việt – Trung; ta tấn công cứ điểm Đông Khê, mai phục, chặn đánh quân Pháp ở nhiều nơi trên Đường số 4.',
+      'Sau gần một tháng: giải phóng khu vực biên giới rộng lớn, mở đường liên lạc quốc tế, bảo vệ căn cứ địa Việt Bắc, chọc thủng Hành lang Đông – Tây, làm phá sản Kế hoạch Rơ-ve.',
+      'Là chiến dịch tiến công lớn đầu tiên của bộ đội chủ lực; từ đây ta giành thế chủ động trên chiến trường chính (Bắc Bộ).',
+    ],
+    map: {
+      size: 100,
+      cam: { x: 2, z: 0, d: 118, yaw: 0, pitch: 56 },
+      terrain: {
+        seed: 19, biome: 'forest', base: 1.0, rough: 1.0, hmax: 9, relief: 1.8, contour: 1.5,
+        blobs: [[-20, -36, 7, 6], [-4, -34, 7, 6], [10, -26, 9, 6], [22, -18, 8, 6], [-28, -12, 9, 6], [8, -2, 9, 5], [24, 12, 9, 5], [-12, 6, 9, 5], [36, -6, 9, 6], [-40, 2, 11, 6], [44, -30, 11, 7], [-44, -34, 10, 6], [-2, 22, 9, 4], [18, 30, 8, 4], [-26, 28, 8, 4]],
+        roads: [
+          { pts: [[-34, -30], [-22, -26], [-10, -22], [2, -16], [14, -8], [28, 4], [40, 16]], w: 0.95, label: 'Đường số 4' },
+          { pts: [[-34, -30], [-30, -10], [-26, 12], [-18, 30], [-6, 44]], w: 0.8 },
+          { pts: [[40, 16], [36, 30], [30, 46]], w: 0.8 },
+        ],
+        tint: [{ r: [-50, -50, 50, -43], c: 0xbfae7a, a: 0.55 }],
+        forest: { n: 1200, kinds: ['conifer', 'broad'], hmin: 1.2, hmax: 10, thr: 0.38 },
+      },
+      places: {
+        bien: { x: 0, z: -46, type: 'pin', label: 'Biên giới Việt – Trung (Trung Quốc ở phía bắc)', imp: 3 },
+        caobang: { x: -34, z: -30, type: 'bunker', r: 1.8, label: 'Cao Bằng', side: 'fr', imp: 3, flat: 3 },
+        dongkhe: { x: -10, z: -22, type: 'bunker', r: 1.8, label: 'Đông Khê', side: 'fr', imp: 3, flat: 3 },
+        cocxa: { x: 2, z: -16, type: 'pass', label: 'Cốc Xá', imp: 3 },
+        thatkhe: { x: 14, z: -8, type: 'bunker', r: 1.8, label: 'Thất Khê', side: 'fr', imp: 3, flat: 3 },
+        nasam: { x: 28, z: 4, type: 'bunker', r: 1.4, label: 'Na Sầm', side: 'fr', imp: 2, flat: 2.6 },
+        langson: { x: 40, z: 16, type: 'town', r: 3, n: 9, label: 'Lạng Sơn', side: 'fr', imp: 3, flat: 3.5 },
+        hanoi: { x: 30, z: 46, type: 'city', r: 5, n: 24, label: 'Hà Nội', side: 'fr', imp: 2 },
+        atk: { x: -24, z: 10, type: 'hq', label: 'Căn cứ địa Việt Bắc', side: 'vn', imp: 3, flat: 3, r: 1.8 },
+        tn: { x: -6, z: 40, type: 'town', r: 2.6, n: 7, label: 'Thái Nguyên', imp: 1 },
+        lang1: { x: -22, z: -6, type: 'camp', label: 'Khu tập kết của ta', side: 'vn', imp: 2, flat: 2.5 },
+      },
+    },
+    steps: [
+      {
+        id: 's0', title: 'Chuỗi cứ điểm khóa biên giới', date: '1949 – 1950',
+        text: 'Theo Kế hoạch Rơ-ve, Pháp xây chuỗi cứ điểm dọc Đường số 4: Cao Bằng, Đông Khê, Thất Khê, Na Sầm, Lạng Sơn, hòng khóa chặt biên giới Việt – Trung và cô lập căn cứ địa Việt Bắc.',
+        cap: 'Âm mưu của địch: khóa chặt biên giới', cam: { x: 2, z: -8, d: 104, yaw: 0, pitch: 55 }, mood: 'brief', hl: ['caobang', 'dongkhe', 'thatkhe', 'nasam', 'langson'],
+        acts: [
+          { t: 'spawn', kind: 'inf', side: 'fr', at: 'caobang', n: 8, label: 'Quân Pháp ở Cao Bằng' },
+          { t: 'spawn', kind: 'inf', side: 'fr', at: 'dongkhe', n: 6, label: 'Đồn Đông Khê' },
+          { t: 'spawn', kind: 'inf', side: 'fr', at: 'thatkhe', n: 10, label: 'Lực lượng ứng cứu Thất Khê' },
+          { t: 'spawn', kind: 'inf', side: 'fr', at: 'langson', n: 8 },
+          { t: 'arrow', path: ['caobang', 'dongkhe', 'cocxa', 'thatkhe', 'nasam', 'langson'], side: 'fr', label: 'Tuyến phòng thủ Đường số 4', dur: 4.5, lift: 1.2 },
+          { t: 'spawn', id: 'vnMain', kind: 'inf', side: 'vn', at: 'lang1', n: 12, label: 'Bộ đội chủ lực của ta', delay: 1 },
+          { t: 'mark', at: 'bien', text: 'Biên giới Việt – Trung', side: 'ne', lift: 3, delay: 1 },
+        ],
+      },
+      {
+        decision: {
+          id: 'd1', title: 'Chọn mục tiêu mở màn',
+          situation: 'Thất Khê tập trung nhiều quân và hỏa lực, là nơi viện binh xuất phát. Đông Khê nằm giữa Cao Bằng và Thất Khê, bị cô lập, quân ít hơn.',
+          ask: 'Em đánh vào đâu trước tiên?',
+          cam: { x: -8, z: -14, d: 84, yaw: 0, pitch: 55 }, pulse: ['dongkhe', 'thatkhe'],
+          threat: [
+            { path: ['thatkhe', 'cocxa', 'dongkhe'], side: 'fr', label: 'Viện binh Thất Khê' },
+            { path: ['hanoi', 'langson', 'nasam', 'thatkhe'], side: 'fr', label: 'Tiếp viện từ Hà Nội' },
+          ],
+          hints: {
+            dia: 'Trên Đường số 4, cứ điểm nào nằm giữa, nếu bị chiếm sẽ cắt đôi tuyến phòng thủ của địch?',
+            luc: 'Thất Khê mạnh, Đông Khê yếu hơn và bị cô lập. Nên húc vào nơi mạnh nhất, hay đánh nơi yếu mà vẫn buộc địch ứng cứu?',
+            co: 'Ta chỉ đủ sức đánh một mục tiêu then chốt. Đánh đồng loạt cả tuyến, hay đánh một điểm rồi diệt quân cứu viện?',
+          },
+          options: [
+            { k: 'A', short: 'Đánh Đông Khê, cắt Đường số 4?', text: 'Tiến công Đông Khê, cắt đôi Đường số 4, buộc địch đưa quân đến cứu rồi diệt viện.', ok: true, show: [{ from: 'lang1', to: 'dongkhe' }],
+              fact: 'Ngày 16/9/1950 ta nổ súng tiến công Đông Khê. Đánh vào chỗ yếu, chia cắt tuyến phòng thủ, nhử viện binh: phương châm “đánh điểm, diệt viện”.' },
+            { k: 'B', short: 'Đánh thẳng Thất Khê?', text: 'Dồn lực lượng đánh thẳng vào Thất Khê, nơi địch đông nhất.', ok: false, tag: 'doi-dau', show: [{ from: [4, -30], to: 'thatkhe' }],
+              why: 'Thất Khê có lực lượng mạnh, hỏa lực lớn, nhiều quân dự bị. Đánh vào đó là húc vào chỗ mạnh nhất, tổn thất nặng mà chưa chắc thắng.' },
+            { k: 'C', short: 'Đánh cả năm cứ điểm?', text: 'Đồng loạt tiến công cả năm cứ điểm từ Cao Bằng đến Lạng Sơn.', ok: false, tag: 'dan-trai', show: [{ from: 'lang1', to: 'caobang' }, { from: [-4, -4], to: 'thatkhe' }, { from: [20, -4], to: 'langson' }],
+              why: 'Chủ lực ta còn ít. Đánh khắp nơi là yếu ở mọi hướng, không còn lực lượng dự bị để diệt viện.' },
+          ],
+        },
+      },
+      {
+        id: 's1', title: 'Đông Khê thất thủ', date: '16 – 18/9/1950',
+        text: 'Ngày 16 tháng 9 năm 1950, ta nổ súng tiến công Đông Khê. Sau hai ngày đêm ác liệt, ngày 18 tháng 9 Đông Khê bị tiêu diệt. Đường số 4 bị cắt, Cao Bằng bị cô lập, Thất Khê bị uy hiếp.',
+        cap: 'Đông Khê bị tiêu diệt · 18/9/1950', cam: { at: 'dongkhe', d: 60, yaw: -15, pitch: 48 }, mood: 'battle',
+        acts: [
+          { t: 'arrow', from: 'lang1', to: 'dongkhe', side: 'vn', dur: 2.6 },
+          { t: 'arrow', from: [-20, -34], to: 'dongkhe', side: 'vn', dur: 2.4, delay: 0.3, follow: false },
+          { t: 'shell', from: 'phaoDK', to: 'dongkhe', n: 6, delay: 2 },
+          { t: 'boom', at: 'dongkhe', n: 6, spread: 3, size: 1.5, delay: 3.4 },
+          { t: 'tracer', from: [-16, -18], to: 'dongkhe', n: 14, delay: 3.8 },
+          { t: 'smoke', at: 'dongkhe', big: true, delay: 5 },
+          { t: 'flag', at: 'dongkhe', kind: 'vn', delay: 6.5 },
+          { t: 'mark', at: 'dongkhe', text: '18/9/1950', side: 'vn', delay: 6.5 },
+          { t: 'ring', at: 'caobang', rx: 6, rz: 6, color: 0xff3b4a, label: 'Cao Bằng bị cô lập', side: 'fr', delay: 7 },
+        ],
+      },
+      {
+        decision: {
+          id: 'd2', title: 'Đối phó phản ứng của Pháp',
+          situation: 'Mất Đông Khê, Pháp sẽ đưa quân từ Thất Khê lên chiếm lại và rút quân từ Cao Bằng xuống, cùng đi trên Đường số 4.',
+          ask: 'Em bố trí lực lượng thế nào?',
+          cam: { x: -4, z: -14, d: 90, yaw: 0, pitch: 55 }, pulse: ['cocxa', 'thatkhe', 'caobang'],
+          threat: [
+            { path: ['thatkhe', 'cocxa', 'dongkhe'], side: 'fr', label: 'Pháp từ Thất Khê lên' },
+            { path: ['caobang', 'dongkhe', 'cocxa'], side: 'fr', label: 'Pháp rút từ Cao Bằng' },
+          ],
+          hints: {
+            dia: 'Hai cánh quân địch phải đi chung một con đường hẹp giữa núi rừng. Đoạn nào có lợi cho ta mai phục?',
+            luc: 'Các binh đoàn địch rất đông, du kích nhỏ lẻ khó diệt nổi. Trận này cần dùng lực lượng nào của ta?',
+            co: 'Địch đang bối rối, chưa kịp hợp quân. Mai phục sẵn trên đường chúng đi, hay chỉ giữ Đông Khê rồi dừng?',
+          },
+          options: [
+            { k: 'A', short: 'Chủ lực mai phục trên Đường số 4?', text: 'Dùng chủ lực mai phục trên Đường số 4, chặn đánh cả viện binh lẫn quân rút từ Cao Bằng.', ok: true, show: [{ from: [4, -30], to: 'cocxa' }, { from: [-24, -34], to: 'cocxa' }],
+              fact: 'Ta mai phục, chặn đánh quân Pháp ở nhiều nơi trên Đường số 4. Cánh ứng cứu từ Thất Khê và cánh rút từ Cao Bằng đều bị tiêu diệt, buộc địch rút chạy.' },
+            { k: 'B', short: 'Chỉ giữ Đông Khê rồi dừng?', text: 'Chỉ giữ Đông Khê, giải tán bớt lực lượng, không chuẩn bị gì thêm.', ok: false, tag: 'chu-quan', show: [{ t: 'ring', at: 'dongkhe', rx: 6, rz: 6 }],
+              why: 'Đánh Đông Khê chỉ là bước nhử. Coi chiến dịch đã xong là chủ quan; địch sẽ phản công chiếm lại Đông Khê.' },
+            { k: 'C', short: 'Đánh du kích nhỏ lẻ như 1947?', text: 'Chia thành các toán du kích nhỏ quấy rối như ở Việt Bắc năm 1947.', ok: false, tag: 'rap-khuon', show: [{ from: [-14, -12], to: [-6, -20], w: 0.6 }, { from: [-4, -8], to: [2, -14], w: 0.6 }, { from: [10, -14], to: [8, -10], w: 0.6 }],
+              why: 'Năm 1950 chủ lực ta đã trưởng thành, địch đi theo binh đoàn lớn. Máy móc lặp lại cách đánh năm 1947 không đủ diệt gọn chúng.' },
+          ],
+        },
+      },
+      {
+        id: 's2', title: 'Diệt viện trên Đường số 4', date: 'Đầu 10/1950',
+        text: 'Đúng như dự đoán, Pháp đưa quân từ Thất Khê lên và rút quân từ Cao Bằng xuống. Ta mai phục, chặn đánh ở Cốc Xá và nhiều nơi trên Đường số 4, tiêu diệt và bắt sống phần lớn hai cánh quân.',
+        cap: 'Chặn đánh trên Đường số 4', cam: { x: -8, z: -14, d: 98, yaw: 0, pitch: 54 },
+        acts: [
+          { t: 'spawn', id: 'frUp', kind: 'inf', side: 'fr', at: 'thatkhe', n: 10, label: 'Cánh ứng cứu từ Thất Khê' },
+          { t: 'spawn', id: 'frDown', kind: 'inf', side: 'fr', at: 'caobang', n: 10, label: 'Cánh rút từ Cao Bằng' },
+          { t: 'spawn', id: 'frXe', kind: 'truck', side: 'fr', at: 'thatkhe', n: 3, label: 'Xe cơ giới Pháp' },
+          { t: 'move', id: 'frXe', path: [[8, -12], 'cocxa'], dur: 5, delay: 0.5, cue: 'that khe' },
+          { t: 'move', id: 'frUp', path: [[8, -12], 'cocxa'], dur: 5, delay: 0.5 },
+          { t: 'move', id: 'frDown', path: [[-24, -26], 'dongkhe', [-4, -19], 'cocxa'], dur: 7, delay: 0.5 },
+          { t: 'arrow', path: [[4, -30], 'cocxa'], side: 'vn', label: 'Mai phục', dur: 2.4, delay: 2 },
+          { t: 'arrow', path: [[-8, -32], [-4, -20], 'cocxa'], side: 'vn', dur: 2.4, delay: 2.3, follow: false },
+          { t: 'tracer', from: [3, -28], to: 'cocxa', n: 16, delay: 5.5 },
+          { t: 'boom', at: 'cocxa', n: 6, spread: 5, size: 1.5, delay: 6 },
+          { t: 'remove', id: ['frUp', 'frDown', 'frXe'], boom: true, delay: 8 },
+          { t: 'smoke', at: 'cocxa', big: true, delay: 8 },
+          { t: 'flag', at: 'caobang', kind: 'vn', delay: 9 },
+          { t: 'flag', at: 'thatkhe', kind: 'vn', delay: 9.5 },
+        ],
+      },
+      {
+        decision: {
+          id: 'd3', title: 'Phát huy thắng lợi',
+          situation: 'Hai binh đoàn Pháp bị diệt, chúng hoảng hốt rút khỏi Thất Khê, Na Sầm. Dải biên giới bỏ ngỏ; bộ đội đã chiến đấu gần một tháng.',
+          ask: 'Em quyết định gì tiếp theo?',
+          cam: { x: 8, z: -2, d: 102, yaw: 0, pitch: 56 }, pulse: ['thatkhe', 'nasam', 'langson'],
+          threat: [
+            { path: ['thatkhe', 'nasam', 'langson'], side: 'fr', label: 'Pháp rút chạy' },
+            { path: ['langson', 'hanoi'], side: 'fr' },
+          ],
+          hints: {
+            dia: 'Muốn thông đường sang các nước bạn, ta cần làm chủ những đoạn nào của Đường số 4 và dải biên giới?',
+            luc: 'Bộ đội đã mệt nhưng địch đang tan rã. Có nên dừng nghỉ lâu, hay lao thẳng xuống Hà Nội?',
+            co: 'Địch rút chạy, biên giới bỏ ngỏ. Bỏ lỡ lúc này thì khi nào mới có cơ hội tương tự?',
+          },
+          options: [
+            { k: 'A', short: 'Truy kích, giải phóng biên giới?', text: 'Truy kích địch, giải phóng toàn dải biên giới, mở đường liên lạc quốc tế.', ok: true, show: [{ from: 'dongkhe', to: 'thatkhe' }, { from: 'thatkhe', to: 'nasam' }, { from: 'nasam', to: 'langson' }],
+              fact: 'Sau gần một tháng, ta giải phóng khu vực biên giới rộng lớn, mở đường liên lạc quốc tế, bảo vệ căn cứ Việt Bắc, chọc thủng Hành lang Đông – Tây, làm phá sản Kế hoạch Rơ-ve.' },
+            { k: 'B', short: 'Nghỉ ăn mừng dài ngày?', text: 'Dừng chiến dịch, ăn mừng và nghỉ ngơi dài ngày vì địch đã thua.', ok: false, tag: 'chu-quan', show: [{ t: 'ring', at: 'thatkhe', rx: 6, rz: 6 }],
+              why: 'Biên giới chưa được giải phóng hết. Ngừng tiến công để ăn mừng là chủ quan, cho Pháp thời gian rút an toàn và dựng lại phòng thủ.' },
+            { k: 'C', short: 'Đánh thẳng xuống Hà Nội?', text: 'Dồn quân đánh thẳng xuống Hà Nội để kết thúc chiến tranh.', ok: false, tag: 'nong-voi', show: [{ from: 'langson', to: 'hanoi' }],
+              why: 'Hà Nội còn lực lượng địch rất mạnh, ta chưa đủ sức đánh thành phố lớn. Nóng vội sẽ mất sức và mất thành quả.' },
+          ],
+        },
+      },
+      {
+        id: 's3', title: 'Chọc thủng thế bao vây', date: 'Tháng 10/1950',
+        text: 'Sau gần một tháng, ta giải phóng khu vực biên giới rộng lớn, mở đường liên lạc quốc tế, làm phá sản Kế hoạch Rơ-ve. Đây là chiến dịch tiến công lớn đầu tiên của bộ đội chủ lực; ta giành thế chủ động trên chiến trường chính.',
+        cap: 'Chiến dịch tiến công lớn đầu tiên của bộ đội chủ lực', cam: { x: 2, z: -2, d: 118, yaw: 0, pitch: 56 }, mood: 'victory',
+        acts: [
+          { t: 'arrow', path: ['dongkhe', 'thatkhe', 'nasam'], side: 'vn', dur: 3 },
+          { t: 'arrow', path: ['caobang', 'dongkhe'], side: 'vn', dur: 2.4, delay: 0.5, follow: false },
+          { t: 'arrow', path: ['langson', 'hanoi'], side: 'fr', label: 'Pháp rút chạy', dur: 3, delay: 1, follow: false },
+          { t: 'flag', at: 'nasam', kind: 'vn', delay: 3 },
+          { t: 'ring', at: [0, -22], rx: 32, rz: 18, color: 0x35d07f, fill: true, label: 'Vùng biên giới được giải phóng', side: 'vn', delay: 3.5 },
+          { t: 'pulse', at: 'dongkhe', color: 0xffd23f, r: 8, delay: 4 },
+          { t: 'mark', at: 'bien', text: 'Thông đường liên lạc quốc tế', side: 'vn', lift: 3, delay: 4.5 },
+        ],
+      },
+    ],
+  });
+})();
